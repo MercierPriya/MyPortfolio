@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Données du formulaire :", formData);
 
         // Envoyer les données au serveur
-        fetch('/submit-form', { 
+        fetch('https://mercierpriya.github.io/submit-form', { 
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
@@ -70,6 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(data.message); // Message de confirmation
             contactForm.reset(); // Réinitialise le formulaire
         })
-        .catch(error => console.error("Erreur lors de l'envoi :", error));
+        .catch(error => console.error("Erreur lors de l'envoi :" ,error));
     });
 });

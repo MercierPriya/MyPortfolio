@@ -1,6 +1,6 @@
 *{
     margin: 0%;
-    padding: 0%;
+   padding:0%;
     box-sizing: border-box;
     
     border: none;
@@ -395,3 +395,55 @@ width:15px;
         width: 70%;
     }
 }
+/* 📱 Mobile (max 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Adjust font size for readability */
+    }
+
+    .home, .education, .about {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center-align text */
+        gap: 3em; /* Reduce gap for compact layout */
+    }
+
+    .img-box img,
+    .about-img img {
+        max-width: 85%; /* Reduce image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .input-box {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+
+    .input-box input {
+        width: 100%; /* Make inputs full width */
+    }
+
+    textarea {
+        width: 100%; /* Make textarea full width */
+    }
+}
+
+/* 📱 Smaller Mobile Screens (max 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%; /* Further adjust font size */
+    }
+
+    .home, .education, .about {
+        gap: 2em; /* Reduce gap further */
+    }
+
+    .img-box img,
+    .about-img img {
+        max-width: 90%; /* Further reduce image size */
+    }
+
+    .btn-1 {
+        font-size: 1.4rem; /* Increase button size for better tap targets */
+        padding: 1.2em 2.5em;
+    }
+}
+
