@@ -16,74 +16,124 @@
        <i class="fi fi-br-menu-burger" id="menu-icon"></i>
         
        <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#project">Projects</a>
-        <a href="#service">Services</a>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos de moi</a>
+        <a href="#project">Projets</a>
+        
        </nav>
-       <button class="gradient-btn">Contact Me</button>
+       <button class="gradient-btn" onclick="scrollToContact()">Contact</button>
     </header>
-   <section class="home">
+   <section id="home" class="home">
     <div class="home-content">
         <h3>Hi</h3>
-        <h1>I'm <span>Priya<br></span> Entry-level <br>Web Developer</h1>
-        <p>Passionné de developement web et de solutions durables, j'ai un solid bagage en Front-end. À la recherche d'apportunités pour contribuer à des projets innovants, je souhaite m'investir dans la transition énergétique et la mobilité durable pour façonner un avenir meilleur.</p>
+        <h1>Je suis <span>Priya<br></span> Entry-level <br>Développeuse Web</h1>
+        <p>En formation en développement web (Front-end et Back-end), je cherche un stage de 2 mois pour mettre en pratique mes compétences et contribuer à des projets innovants dans les domaines de la transition énergétique et de la mobilité durable.</p>
         <div class="btn-box">
-            <button class="btn-1">Hire Me</button>
-            <button class=" btn-2">Education</button>
+            <a href="Web dev Resume.pdf" download><button class="btn-1">Mon CV</button></a>
+            <button id="show-education-btn"
+            class=" btn-2" >Voir Éducation</button>
+
     </div>
     </div>
     <div class="img-box">
         <img src="IMG_20230522_195500_605.jpg" alt="PROFILE PIC">
+    </div> 
+   </section> 
+   <section id="education-content" class="education" style="display:none;">
+    <div>
+        <h2>Éducation</h2>
+        <ul>
+            <li>
+                <h3>Baccalauréat en informatique (BE)</h3>
+                <p> Visvesvaraya Technological University (VTU) Inde | 2010 - 2014</p>
+                <p>Équivalent Bac+3 (niveau 6)</p>
+                <p>Acquisition de compétences en développement web, gestion de bases de données, conception de logiciels, et plus, sur une période de 4 ans.</p>
+            </li>
+            <li>
+                <h3>Titre professionnel Développeur Web et Web Mobile(Niveau 5) </h3>
+                <p>AFEC - Formation La Rochelle | 2024 - (En Cours)</p>
+                <p>Configuration de l'environnement de travail : Maîtrise des outils et environnements pour la gestion de projets web ou web mobile.
+                    <br>Maquettage d'interfaces utilisateurs : Création de maquettes pour interfaces Web et Web mobiles avec Figma.
+                    <br>Développement d’interfaces statiques : HTML5, CSS3, Bootstrap, Tailwind CSS pour des interfaces responsives.
+                    <br>Développement dynamique : EJS, JavaScript, Node.js pour rendre les interfaces interactives.
+                    <br>Gestion de bases de données : Installation et gestion de bases de données relationnelles (MySQL) et NoSQL (MongoDB).
+                    <br>Développement côté serveur : Création de la logique métier avec Node.js, Express.
+                    <br>Déploiement d’applications : Documentation et gestion du déploiement d’applications Web dynamiques</p>
+            </li>
+            <!-- Add more items as needed -->
+        </ul>
     </div>
-   </section>
-   <section class="about">
+   </section> 
+   <section class="about" id="about">
     <div class="about-img">
         <img src="IMG_20230522_195500_605.jpg" alt="about pic">
     </div>
     <div class="about-content">
-        <h2 class="heading">About<span>Me</span></h2>
+        <h2 class="heading">À propos de<span>Moi</span></h2>
         <h3>Entry-level <span >développeuse web et web mobile</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora ducimus atque ea nihil dignissimos eos non, facilis porro dolor cupiditate impedit expedita cum perferendis aut aspernatur recusandae repellat, rem, eius quis! Numquam dolores harum voluptatibus deleniti id tempore, ducimus quos impedit adipisci fugiat, molestiae nobis similique mollitia quam blanditiis?</p>
-        <a href="#" class="btn-2">See More</a>
+        <p id="less">Actuellement en formation de développement web, je suis passionné par la création de solutions numériques innovantes. Résidant à Périgny (17180), je cherche un stage pour mettre en pratique mes compétences. Travailleur acharné, je suis dédié, créatif et enthousiaste à l'idée de rejoindre une équipe dynamique pour contribuer à des projets stimulants...</p>
+        
+        <p id="cover" style="display:none;">
+            <span>Madame, Monsieur,</span>
+            Actuellement en formation en développement web, je souhaite mettre en
+            pratique mes compétences dans un environnement professionnel stimulant.
+            Je vous propose ma candidature pour un stage au sein de votre entreprise,
+            sur deux périodes : du 17 mars au 11 avril 2025 et du 14 avril au 30 mai
+            2025.
+            Au cours de ma formation, j'ai acquis des compétences en :
+            Conception d’interfaces utilisateur avec Figma pour des expériences
+            intuitives et responsives.
+            Développement d’interfaces statiques (HTML, CSS, Bootstrap, Tailwind
+            CSS) et dynamiques avec EJS et Express.js.
+            Gestion de bases de données relationnelles et non relationnelles, avec
+            optimisation des accès SQL/NoSQL(MongoDB).
+            Documentation et déploiement d’applications dynamiques robustes.
+            Passionnée par les projets innovants et dotée d’un fort esprit d’équipe, je
+            suis motivée à contribuer activement à vos projets tout en continuant à
+            développer mes compétences.
+            Je serais ravie de vous rencontrer pour discuter de ma candidature. Dans
+            cette attente, je vous prie d’agréer, Madame, Monsieur, l’expression de mes
+            salutations distinguées.
+            </p>
+            <a href=""  id="coverbtn" class="btn-2">Voir Plus</a>
  </div>
    </section>
-   <section class="contact-form">
+   <section class="contact-form" id="contact">
     <h2 class="contact-me">Contact<span>Me</span></h2>
 
     <form action="#">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Nom et Prenom">
             <input type="email" placeholder="Email">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="phone Number">
-            <input type="text" placeholder="Subject">
+            <input type="number" placeholder="Numéro de téléphone">
+            <input type="text" placeholder="Objet">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="send message" class="btn-1">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+        <input type="submit" value="Envoyer un message" class="btn-1 mb-4">
     </form>
 
    </section>
    <footer class="footer">
     <div class="social">
-        <a href="#"><i class="fi fi-brands-facebook"></i></a>
-        <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+        <a href=""><i class="fi fi-brands-facebook"></i></a>
+        <a href="http://www.linkedin.com/in/mercier-priya"><i class="fi fi-brands-linkedin"></i></a>
         <a href="#"><i class="fi fi-brands-instagram"></i></a>
-        <a href="#"><i class="fi fi-brands-github"></i></a>
+        <a href="https://github.com/MercierPriya"><i class="fi fi-brands-github"></i></a>
     </div>
     <ul>
         <li>
             <a href="#">Services</a>
         </li>
         <li>
-            <a href="#">About Me</a>
+            <a href="#about">À propos de moi</a>
         </li>
         <li>
-            <a href="#">Education</a>
+            <a href="#home">Éducation</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </li>
     </ul>
    </footer>
@@ -91,6 +141,7 @@
 
 
 
-   <script src="script.js"></script> 
+   <script src="script.js"></script>   
 </body>
+
 </html>
